@@ -16,10 +16,33 @@
     <p>
         O filme <strong>Snowden</strong> mostra como a exposição indevida a informações pode trazer sérias consequências
         á privacidade das pessoas. A partir disso, um desenvolvedor Front-End deve estar atento ao lidar com dados
-        sensíveis em seus sistemas. <br> 
-        Informações como CPF, senha, localização e dados bancários exigem medidas de proteção, é fundamental garantir que essas informações não fiquem expostas no código fonte e no sejam armazenadas localmente de forma insegura. O uso de <strong>HTTPS</strong> é obrigatório para proteger os dados em trânsito, também é importante informar claramente o usuário como seus dados serão utilizados e armazenados, respeitando a <strong>LGPD</strong> (Lei Geral de Proteção de Dados). <br>
-        Um front-end consciente colabora ativamente com a segurança do sistema ao seguir boaspráticas, trabalhar em conjunto com o back-end e manter os usuários informados sobre seus direitos e a política de privacidade.
-    </p>
+        sensíveis em seus sistemas. <br>
+        Informações como CPF, senha, localização e dados bancários exigem medidas de proteção, é fundamental garantir
+        que essas informações não fiquem expostas no código fonte e no sejam armazenadas localmente de forma insegura. O
+        uso de <strong>HTTPS</strong> é obrigatório para proteger os dados em trânsito, também é importante informar
+        claramente o usuário como seus dados serão utilizados e armazenados, respeitando a <strong>LGPD</strong> (Lei
+        Geral de Proteção de Dados). <br>
+        Um front-end consciente colabora ativamente com a segurança do sistema ao seguir boaspráticas, trabalhar em
+        conjunto com o back-end e manter os usuários informados sobre seus direitos e a política de privacidade.
+    </p> <br>
+
+    <h2>Formulário com dados sensíveis</h2> <br>
+    <form>
+        <!-- O campo CPF exige mais cuidado porque é um dado pessoal sensível -->
+        <input type="text" name="cpf" placeholder="CPF">
+
+        <!-- O campo de e-mail pode ser usado para golpes de phishing -->
+        <!--Phishing é um tipo de golpe digital que usa engenharia social para enganar vítimas a revelarem informações confidenciais, como senhas, dados bancários ou números de cartão de crédito. Os criminosos se passam por entidades legítimas, como bancos, empresas ou órgãos governamentais, para obter essas informações através de e-mails, mensagens de texto ou redes sociais-->
+        <input type="email" name="email" placeholder="E-mail">
+
+        <!-- A senha deve ser protegida, nunca armazenada em texto plano -->
+        <input type="password" name="senha" placeholder="Senha">
+
+        <!-- A localização pode revelar hábitos e rotinas do usuário -->
+        <input type="text" name="localizacao" placeholder="Endereço">
+
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
 
