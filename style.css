@@ -19,3 +19,15 @@ ul {
     margin-top: 10px;
     list-style-type: none;
 }
+#avisoPrivacidade {
+    background-color: rgb(244, 244, 244);;
+    padding: 15px;
+    border: 1px solid rgb(160, 160, 160);;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+#avisoPrivacidade button {
+    margin-left: 10px;
+}
